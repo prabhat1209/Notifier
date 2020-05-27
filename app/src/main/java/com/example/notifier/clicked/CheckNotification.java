@@ -40,7 +40,6 @@ public class CheckNotification extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(Read.KEY_CLICKED, notify.getTitle());
 
-
         db.insert(Read.TABLE_NAME, null, values);
         Log.d("dbPrabhat", "Successfully inserted");
         db.close();

@@ -87,13 +87,13 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
                 cdb.add(read);
             }
             //mainActivity.getNotification();
-            String name = notify.getTitle();
+            /*String name = notify.getTitle();
             String desc = notify.getDescription();
 
             Intent it = new Intent(context ,ShowNotification.class);
             it.putExtra("Rname",name);
             it.putExtra("Rdesc",desc);
-            context.startActivity(it);
+            context.startActivity(it);*/
         }
     }
 }
