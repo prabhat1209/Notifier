@@ -82,8 +82,10 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             //Toast.makeText(context,"The Position is : "+pos,Toast.LENGTH_SHORT).show();
             linearLayout.setBackgroundColor(Color.WHITE);
             Notification notify = notificationList.get(pos);
-            DoneNotification read = new DoneNotification(String.valueOf(notify.getId()));
-            cdb.add(read);
+            if(!cdb.isExist(String.valueOf(notify.getId()))){
+                DoneNotification read = new DoneNotification(String.valueOf(notify.getId()));
+                cdb.add(read);
+            }
             //mainActivity.getNotification();
             String name = notify.getTitle();
             String desc = notify.getDescription();
