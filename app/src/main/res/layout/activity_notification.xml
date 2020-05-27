@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotificationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="@color/pink"
+            android:layout_gravity="left"
+            android:layout_height="55dp">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_height="50dp"
+                android:id="@+id/back"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:text="Notifications"
+                android:textSize="26dp"
+                android:textColor="@color/white"/>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/gradient"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="422dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</LinearLayout>

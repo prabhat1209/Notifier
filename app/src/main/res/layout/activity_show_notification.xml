@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".ShowNotification">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/pink"
+        android:layout_height="55dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:id="@+id/back_recView"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:id="@+id/title_show"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/show_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:fontFamily="cursive"
+            android:padding="25dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:fontFamily="@font/alegreya_sans_italic" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
